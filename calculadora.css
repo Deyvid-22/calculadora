@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.calculadora-container{
+    background-color: rgba(0, 0, 0, 0.904);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.calculadora-container #input {
+    display: block;
+    width: 100%;
+    text-align: right;
+    background-color:  rgba(241, 237, 237, 0);
+    outline: none;
+    border: none;
+    color: #ffff;
+    caret-color: rgb(15, 153, 233);
+}
+
+.linha{
+   display: block;
+   height: 1px;
+   background-color: #fff;
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+
+
+.calculadora {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 300px;
+    height: 400px;
+}
+
+.calculadora button{
+    padding: 20px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0px;
+    font-size: 30px;
+    transition: background 0.1000ms;
+}
+
+.icon {
+    text-align: end;
+    color: #ffff;
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.calculadora button:hover {
+    background-color: #ffffff23;
+}
+
+span {
+    display: none;
+}
+
+.reset {
+    color: red;
+    background-color: rgba(0, 0, 0, 0.712);
+}
+
+.num, .sinal{
+    background-color: rgba(0, 0, 0, 0.712);
+    color: #fff;
+}
+
+.simbulo {
+    background-color: rgba(0, 0, 0, 0.712);
+    color: rgb(44, 207, 44);
+}
+
+.cor{
+    background: rgb(44, 207, 44);
+    color: #fff;
+}
