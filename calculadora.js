@@ -8,6 +8,7 @@ let result = document.querySelector('.result')
 let addSinal = document.querySelector('.add_sinal')
 num = false;
 
+
 numero.forEach((numero) => {
   numero.addEventListener("click", clicar);
   function clicar() {
@@ -44,25 +45,27 @@ function add_sinal(){
       alert('ação indisponivel')
      }
        
-    // console.log(virgulaArray.includes(','))
-     
+    // console.log(virgulaArray.includes(','))  
 }
-
 
 
 add.addEventListener('click', adicionar)
 
 function adicionar() {
+  let barra1 = 0
+  let barra2 = 0
 
-  if (num === false) {
-    input.value = input.value + '('
-    
-  } else if (num === true) {
-    input.value = input.value + ')'
-    
-    //alterar a logica
-  }
-
+  if(num === true && barra2 < barra1){
+  input.value = input.value + ')'
+    barra2 = barra2 + 1
+       console.log('true')
+       console.log(barra2, 'barra2')
+   }else {
+   input.value = input.value + '('
+    barra1 = barra1 = barra1 + 1
+    console.log(barra1, 'barra1')
+   console.log('false')
+   }
 }
 
 apagar.addEventListener("click", apaga);
